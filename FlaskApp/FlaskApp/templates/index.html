@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Fan and Light System</title>
+    <link rel="stylesheet" href="static/css/style.css">
+    <script src="static/js/main.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <!-- Header Section -->
+        <header class="header">
+            <h1>Smart Fan and Light System</h1>
+            <p>Efficient control of energy usage through automatic system adjustments.</p>
+        </header>
+
+        <!-- Control Panel -->
+        <section class="control-panel">
+            <div class="status">
+                <h3>Connection Status:</h3>
+                <p id="connection_id">Connecting...</p>
+            </div>
+            
+            <div class="status">
+                <h3>Motion Detected:</h3>
+                <p id="motion_id">No motion detected</p>
+            </div>
+
+            <div class="controls">
+                <div class="control-item">
+                    <h3>Fan/AC Control:</h3>
+                    <label for="fan_control">Turn On/Off Fan/AC</label>
+                    <input type="checkbox" id="fan_control" onclick="toggleFanAC(this);">
+                </div>
+
+                <div class="control-item">
+                    <h3>LED Lighting Control:</h3>
+                    <label for="light_control">Turn On/Off Lights</label>
+                    <input type="checkbox" id="light_control" onclick="toggleLight(this);">
+                </div>
+
+                <div class="control-item">
+                    <h3>Buzzer Control:</h3>
+                    <label for="buzzer">Turn On Buzzer</label>
+                    <input type="checkbox" id="buzzer" onclick="handleClick(this);">
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <p>&copy; 2025 Smart Energy Solutions. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>

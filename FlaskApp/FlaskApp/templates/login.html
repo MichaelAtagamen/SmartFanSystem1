@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Fan System Login</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+    <header>
+        <div class="logo-container">
+            <h1>Smart Fan System</h1>
+            <img src="{{ url_for('static', filename='images/fan_logo.png') }}" alt="Fan Logo">
+        </div>
+    </header>
+
+    <div class="main-content">
+        <div class="login-container">
+            <h1>Sign in to Control Your Smart Fan</h1>
+            <p>Please sign in with your Google account to continue.</p>
+            <!-- Corrected link to 'login_redirect' route -->
+            <a href="{{ url_for('login_redirect') }}">
+                <button type="button" class="login-with-google-btn">
+                    Sign in with Google
+                </button>
+            </a>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Smart Fan System. All Rights Reserved.</p>
+    </footer>
+</body>
+
+</html>
